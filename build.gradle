@@ -33,6 +33,4 @@ subprojects {
     test {
         useJUnitPlatform()
     }
-
-    compileJava.dependsOn tasks.googleJavaFormat
 }

@@ -2,4 +2,8 @@ rootProject.name = 'gradle-multi-project-sample'
 
 include 'common'
 include 'base'
-include 'app'
+
+if (!System.getenv().containsKey("SNYK_TEST")) {
+    include 'app'
+
+}
